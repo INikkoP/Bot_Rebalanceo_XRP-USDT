@@ -6,8 +6,8 @@ from datetime import datetime
 import time
 from streamlit_autorefresh import st_autorefresh
 
-st_autorefresh(interval=5000, limit=None, key="rebalanceo_autorefresh")
 st.set_page_config(page_title="Bot de Rebalanceo XRP/USDT", layout="wide")
+st_autorefresh(interval=5000, limit=None, key="rebalanceo_autorefresh")
 
 st.title("🤖 Bot de Rebalanceo XRP/USDT (Con Pausa en Wall Street)")
 st.caption("Filtro SMA + Stop Loss Global + Pausa Automática durante Wall Street (10:30 - 17:00)")
