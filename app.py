@@ -4,7 +4,9 @@ import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime
 import time
+from streamlit_autorefresh import st_autorefresh
 
+st_autorefresh(interval=5000, limit=None, key="rebalanceo_autorefresh")
 st.set_page_config(page_title="Bot de Rebalanceo XRP/USDT", layout="wide")
 
 st.title("🤖 Bot de Rebalanceo XRP/USDT (Con Pausa en Wall Street)")
